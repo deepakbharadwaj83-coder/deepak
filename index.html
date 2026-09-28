@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#eef5f2" />
+    <meta name="description" content="Kinetic Lab wellness command center with posture coaching and food planning." />
+    <title>Kinetic Lab | Wellness Command Center</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Primary navigation">
+        <a class="brand" href="#overview" data-view="overview" aria-label="Kinetic Lab overview">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span>KINETIC<span class="brand-accent">LAB</span></span>
+        </a>
+
+        <div class="nav-group">
+          <p class="nav-label">Your command center</p>
+          <button class="nav-item is-active" type="button" data-view="overview">Overview</button>
+          <button class="nav-item" type="button" data-view="posture">Coach Lab</button>
+          <button class="nav-item" type="button" data-view="fuel">Fuel Plan</button>
+          <button class="nav-item" type="button" data-view="challenges">Challenges</button>
+        </div>
+
+        <div class="nav-group nav-group-secondary">
+          <p class="nav-label">Track your edge</p>
+          <button class="nav-item" type="button" data-view="progress">Progress</button>
+          <button class="nav-item" type="button" data-view="personalize">Personalize</button>
+        </div>
+
+        <div class="profile-chip" aria-label="Current profile">
+          <span class="avatar">AM</span>
+          <span>
+            <strong>Alex Morgan</strong>
+            <small>Build strength</small>
+          </span>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar">
+          <div>
+            <p class="date-line">THURSDAY, 24 OCTOBER 2024</p>
+            <h1>Good morning, Alex<span class="accent-dot">.</span></h1>
+          </div>
+          <div class="topbar-actions">
+            <span class="streak"><span class="status-dot" aria-hidden="true"></span>12 day streak</span>
+            <button class="mode-toggle" type="button" id="theme-toggle" aria-label="Toggle light and dark mode">Dark mode</button>
+            <span class="mini-signal" aria-hidden="true"></span>
+            <span class="avatar avatar-small">AM</span>
+          </div>
+        </header>
+
+        <section id="view-overview" class="view is-visible" aria-labelledby="overview-title">
+          <div class="hero-grid">
+            <article class="hero-panel surface-panel">
+              <div class="hero-copy">
+                <p class="eyebrow"><span class="live-dot" aria-hidden="true"></span>Coach lab / live</p>
+                <h2 id="overview-title">Build a body <span>that performs.</span></h2>
+                <p>Your personal operating system for strength, fuel, and recovery, calibrated to your actual life.</p>
+                <button class="primary-button" type="button" data-view="posture">Open posture coach <span aria-hidden="true">↗</span></button>
+              </div>
+              <div class="hero-orbit" aria-hidden="true"><span></span><i></i></div>
+              <span class="panel-index" aria-hidden="true">01</span>
+            </article>
+
+            <article class="readiness-panel surface-panel">
+              <div class="panel-heading"><p class="eyebrow">Readiness score</p><span class="optimal"><span class="status-dot"></span>Optimal</span></div>
+              <div class="score-ring"><strong>87</strong><span>/100</span></div>
+              <p class="panel-note">You are primed for a high-output session today.</p>
+              <div class="stats-row">
+                <div><strong>8.2h</strong><span>Sleep</span></div>
+                <div><strong>52</strong><span>HRV ms</span></div>
+                <div><strong>Low</strong><span>Stress</span></div>
+              </div>
+            </article>
+          </div>
+
+          <div class="section-heading">
+            <div><p class="section-kicker">02 / Daily OS</p><h3>Today's protocol</h3></div>
+            <button class="quiet-button" type="button" data-view="posture">Recalibrate</button>
+          </div>
+
+          <div class="protocol-grid">
+            <article class="protocol-panel surface-panel">
+              <div class="panel-heading"><p class="eyebrow">Designed for you</p><strong class="duration">42 <small>MIN</small></strong></div>
+              <h4>Power &amp; presence</h4>
+              <p>A full-body strength session to turn readiness into momentum.</p>
+              <div class="protocol-list">
+                <div><span>01</span><p>Activate <small>Dynamic warm-up</small></p><strong>8 min</strong></div>
+                <div><span>02</span><p>Load <small>Compound strength</small></p><strong>26 min</strong></div>
+                <div><span>03</span><p>Integrate <small>Core + carry</small></p><strong>8 min</strong></div>
+              </div>
+              <button class="outline-button" type="button" id="complete-session">Mark session complete</button>
+            </article>
+
+            <article class="balance-panel surface-panel">
+              <div class="panel-heading"><p class="eyebrow">Weekly balance</p><span>3 / 5 sessions</span></div>
+              <div class="balance-row"><span><b class="coral-dot"></b>Strength</span><span class="bar"><i style="width: 76%"></i></span><strong>76%</strong></div>
+              <div class="balance-row"><span><b class="cyan-dot"></b>Recovery</span><span class="bar"><i class="cyan-bar" style="width: 64%"></i></span><strong>64%</strong></div>
+              <div class="balance-row"><span><b class="lime-dot"></b>Nutrition</span><span class="bar"><i class="lime-bar" style="width: 88%"></i></span><strong>88%</strong></div>
+              <p class="unlock-note">+ 2 sessions to unlock champion tier</p>
+            </article>
+          </div>
+
+          <div class="lower-grid">
+            <article class="fuel-summary surface-panel">
+              <div class="section-heading compact"><div><p class="section-kicker">03 / Fuel</p><h3>Fuel your output</h3></div><button class="quiet-button" type="button" data-view="fuel">Plan</button></div>
+              <div class="calorie-line"><strong>1,420</strong><span>/ 2,100 kcal<br /><small>Daily target</small></span></div>
+              <div class="meal-row"><span class="meal-icon">B</span><div><strong>Breakfast</strong><span>Protein oats + berries</span></div><b>420 kcal</b></div>
+              <div class="meal-row"><span class="meal-icon">L</span><div><strong>Lunch</strong><span>Salmon power bowl</span></div><b>580 kcal</b></div>
+              <div class="meal-row"><span class="meal-icon muted">D</span><div><strong>Dinner</strong><span>Not planned yet</span></div><button type="button" class="text-button" data-view="fuel">Plan</button></div>
+            </article>
+
+            <article class="hydration-panel surface-panel">
+              <p class="section-kicker">Hydration</p>
+              <div class="hydration-number"><strong id="hydration-count">5</strong><span>/ 8 glasses</span></div>
+              <p>63% of daily target</p>
+              <div class="water-track"><i id="water-fill" style="width: 63%"></i></div>
+              <button class="outline-button" type="button" id="log-glass">Log glass</button>
+            </article>
+          </div>
+        </section>
+
+        <section id="view-posture" class="view" aria-labelledby="posture-title" hidden>
+          <div class="section-heading page-heading"><div><p class="section-kicker">Coach lab / camera</p><h2 id="posture-title">Find your strongest alignment.</h2><p>Use your camera for live posture cues. Video stays in this browser tab and is never uploaded.</p></div><span class="privacy-note">Local analysis</span></div>
+          <div class="coach-grid">
+            <article class="camera-panel surface-panel">
+              <div class="camera-stage" id="camera-stage">
+                <video id="posture-video" autoplay playsinline muted></video>
+                <canvas id="posture-canvas" aria-hidden="true"></canvas>
+                <div class="camera-guide" aria-hidden="true"><span></span><i></i></div>
+                <div class="camera-placeholder" id="camera-placeholder"><span class="camera-icon" aria-hidden="true"></span><strong>Camera coach is ready</strong><p>Start a session to check head, shoulder, and hip alignment.</p></div>
+                <div class="camera-status" id="camera-status">Camera off</div>
+              </div>
+              <div class="camera-controls"><button class="primary-button" id="start-camera" type="button">Start camera coach</button><button class="quiet-button" id="stop-camera" type="button" disabled>Stop</button></div>
+              <p class="camera-error" id="camera-error" role="alert" hidden></p>
+            </article>
+            <aside class="coach-side">
+              <article class="coach-score surface-panel"><div class="panel-heading"><p class="eyebrow">Alignment score</p><span id="posture-score-state">Waiting</span></div><strong id="posture-score">--</strong><span class="score-label">/100</span><p id="posture-summary">Start the camera and stand where your full upper body is visible.</p></article>
+              <article class="cue-panel surface-panel"><p class="section-kicker">Live cues</p><div class="cue-item is-muted" id="cue-head"><span class="cue-index">01</span><div><strong>Head position</strong><p>Waiting for a pose</p></div></div><div class="cue-item is-muted" id="cue-shoulders"><span class="cue-index">02</span><div><strong>Shoulders</strong><p>Waiting for a pose</p></div></div><div class="cue-item is-muted" id="cue-spine"><span class="cue-index">03</span><div><strong>Spine line</strong><p>Waiting for a pose</p></div></div></article>
+              <article class="tip-panel"><p class="section-kicker">Coach note</p><strong>Keep the back of your neck long.</strong><p>Imagine your crown moving up while your ribs stay stacked over your pelvis.</p></article>
+            </aside>
+          </div>
+        </section>
+
+        <section id="view-fuel" class="view" aria-labelledby="fuel-title" hidden>
+          <div class="section-heading page-heading"><div><p class="section-kicker">Fuel plan / calculator</p><h2 id="fuel-title">Make room for food you love.</h2><p>Estimate calories for a serving, then set a realistic weekly rhythm around your daily budget.</p></div><span class="privacy-note">Demo-safe fallback</span></div>
+          <div class="fuel-grid">
+            <article class="nutrition-panel surface-panel">
+              <div class="nutrition-header"><div><p class="eyebrow">Food lookup</p><h3>What are you eating?</h3></div><span class="api-badge">Public data + local guide</span></div>
+              <label for="food-name">Food name</label><input id="food-name" type="text" value="Paneer Tikka" autocomplete="off" />
+              <div class="input-grid"><div><label for="daily-budget">Daily calorie budget</label><input id="daily-budget" type="number" min="800" max="6000" value="2100" /></div><div><label for="serving-size">Servings today</label><input id="serving-size" type="number" min="0.25" max="10" step="0.25" value="1" /></div></div>
+              <button class="primary-button" id="recalc" type="button">Calculate calories <span aria-hidden="true">↗</span></button>
+              <p class="form-note">No API key is required. Known foods use the local guide first; a public lookup is attempted next.</p>
+            </article>
+            <article class="calorie-result surface-panel"><p class="eyebrow">Estimated serving</p><strong id="calorie-value">320 kcal</strong><p id="source-name">Kinetic Lab local nutrition guide</p><div class="result-rule"></div><p class="section-kicker">Weekly rhythm</p><strong class="weekly-result" id="weekly-suggestion">With a 2,100 kcal budget, one serving fits comfortably 3 times this week.</strong></article>
+          </div>
+          <div class="nutrition-footnote"><span class="status-dot"></span><p>Calories are estimates, not medical advice. Serving size, recipe, and preparation can change the result.</p></div>
+        </section>
+
+        <section id="view-challenges" class="view" aria-labelledby="challenges-title" hidden><div class="empty-view"><p class="section-kicker">Live challenge</p><h2 id="challenges-title">The 30-day ignition</h2><p>12,480 members are choosing consistency over intensity.</p><button class="primary-button" type="button" id="join-challenge">Join challenge</button></div></section>
+        <section id="view-progress" class="view" aria-labelledby="progress-title" hidden><div class="empty-view"><p class="section-kicker">Last 7 days</p><h2 id="progress-title">See your edge compound.</h2><p>Your recovery is trending up. Keep the streak alive.</p><div class="mini-chart" aria-label="Seven day progress chart"><i style="height: 28%"></i><i style="height: 42%"></i><i style="height: 38%"></i><i style="height: 66%"></i><i style="height: 54%"></i><i style="height: 78%"></i><i style="height: 88%"></i></div></div></section>
+        <section id="view-personalize" class="view" aria-labelledby="personalize-title" hidden><div class="empty-view"><p class="section-kicker">Your baseline</p><h2 id="personalize-title">Make the plan yours.</h2><p>Coach preferences and goals will shape your daily protocol.</p><button class="outline-button" type="button" id="save-preferences">Preferences saved</button></div></section>
+      </main>
+    </div>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
